@@ -1,38 +1,57 @@
 .App {
+  width: 100%;
+  margin: 0 auto;
+}
+.drag {
+  width: 70%;
+  height: 20%;
+  background-color: #e2b330;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 32px;
+  display: flex;
+}
+.heading {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #1D57A4;
+  width: 100%;
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  padding: 16px;
+}
+.group-name {
+  color: #1D57A4;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.d-container {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drop-container {
+  position: absolute;
+  background-color: #D3DCDB;
+  border-left: 2px solid #1D57A4;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progress-container {
+  left: 0;
+  top: 10;
+  background-color: #F2F2F2;
+  border-right: 2px solid #1D57A4;
+  position: absolute;
+  width: 50%;
+  height: 100%;
 }
